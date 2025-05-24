@@ -1,29 +1,33 @@
-let score = undefined
-const {score} = req.body  
+// let score = undefined
+// const {score} = req.body  
 
 
-console.log(typeof score)
-console.log(typeof(score))
+// console.log(typeof score)
+// console.log(typeof(score))
 
-let valueInNumber = Number(score)
-console.log(typeof valueInNumber)
-console.log(valueInNumber)
+// let valueInNumber = Number(score)
+// console.log(typeof valueInNumber)
+// console.log(valueInNumber)
 
- /* 
-"33"=> 33
-"33abc"=>NaN
-true => 1; false =>0 
-*/
+//  /* 
+// "33"=> 33
+// "33abc"=>NaN
+// true => 1; false =>0 
+// */
 
 
-let isLoggedIn = NaN
-let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn)
+// let isLoggedIn = NaN
+// let booleanIsLoggedIn = Boolean(isLoggedIn)
+// console.log(booleanIsLoggedIn)
 
-let someNumber = "33"
+// let someNumber = "33"
 
-let stringnumber = String(someNumber)
-console.log(stringnumber)
-let num = Number(stringnumber)
-console.log(typeof (num))
-console.log(typeof stringnumber)
+// let stringnumber = String(someNumber)
+// console.log(stringnumber)
+// let num = Number(stringnumber)
+// console.log(typeof (num))
+// console.log(typeof stringnumber)
+
+console.log("1"+2)
+console.log(1+2)
+console.log(1+2+"2")
