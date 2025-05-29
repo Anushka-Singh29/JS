@@ -3,39 +3,62 @@
 // nahi hai), Symbol(made to use value of a component
 //  unique), BigInt
 
-const score =100;
-const scoreval = 100.3;
+// const score =100;
+// const scoreval = 100.3;
 
-const isloggedin = false;
-const temp = null;
-let useremail;
-console.log(useremail);
+// const isloggedin = false;
+// const temp = null;
+// let useremail;
+// console.log(useremail);
 
-const id = Symbol('123');
-const id2 = Symbol('123');
-console.log(id === id2);
-console.log(id);
-console.log(id2);
+// const id = Symbol('123');
+// const id2 = Symbol('123');
+// console.log(id === id2);
+// console.log(id);
+// console.log(id2);
 
-const bigNumber = 4589928742767587673285n;
-console.log(bigNumber)
+// const bigNumber = 4589928742767587673285n;
+// console.log(bigNumber)
 
-// non-primitive or refrence type: Array, Onjects,
-//Functions
+// // non-primitive or refrence type: Array, Onjects,
+// //Functions
 
-const heroes = ["batman", "superman", "wonder-woman"]
+// const heroes = ["batman", "superman", "wonder-woman"]
 
-let obj = {
-    name: "anu",
-    age:22
+// let obj = {
+//     name: "anu",
+//     age:22
+// }
+
+// console.log(obj)
+
+// const myfunction = function(){
+// console.log("hello")
+// }
+// myfunction()
+
+// console.log(typeof heroes)
+
+//****************************************
+
+// Stack (primitive datatype), Heap:(non- primitive datatype)
+
+let ytname = "youtube"
+let ytname2 = ytname
+ytname2 = "chai"
+
+console.log(ytname)
+console.log(ytname2)
+
+let user = {
+    email:"user@email.com",
+    upi:"upi@ybl"
 }
 
-console.log(obj)
 
-const myfunction = function(){
-console.log("hello")
-}
-myfunction()
+let user2 = user;
 
-console.log(typeof heroes)
-//
+user2.email  ="user@yaho.com"
+
+console.log(user.email)
+console.log(user2.email)
