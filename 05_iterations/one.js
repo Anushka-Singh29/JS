@@ -27,7 +27,14 @@ let myarr = ["flash", "batman", "superman"]
 for (let index = 0; index <= myarr.length; index++) {
     const element = myarr[index];
     // console.log(element)
-    
 }
 
-//
+//break and continue
+for (let index = 1; index < 21; index++) {
+    if (index == 5) {
+        console.log("detected five!!");
+        continue       
+    }
+   console.log(`value of i is: ${index}`);
+    
+}
