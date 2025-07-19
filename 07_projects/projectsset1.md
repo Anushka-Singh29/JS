@@ -1,8 +1,5 @@
 # projects related to DOM
 
-## project link
-[click here]()
-
 # solution Code
 
 ## project 1
@@ -196,5 +193,74 @@ function newGame() {
     playGame = true;
   });
 }
+
+```
+
+## Project 5 solution
+### on a click of button we need to start and stop changing the bg colors
+
+```javascript
+//generate a random color
+
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
+// console.log(randomColor());
+
+const changeBgColor = function changeBgcolor() {
+  document.body.style.backgroundColor = randomColor();
+};
+
+let intervalid;
+
+const startChangingColor = function () {
+  if (!intervalid) {
+    intervalid = setInterval(changeBgColor, 1000);
+  }
+};
+
+const stopChangingColor = function () {
+  clearInterval(intervalid);
+  intervalid = null; //cleaning up intervalid
+};
+
+document.querySelector('#start').addEventListener('click', startChangingColor);
+document.querySelector('#stop').addEventListener('click', stopChangingColor);
+
+```
+
+
+# Project 6 solution
+## whatever key is typed, we get the details
+
+```javascript
+console.log('Project 5');
+
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+<div class='color'> 
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Keycode</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key === ' ' ? 'Space' : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+</div>
+`;
+});
 
 ```
